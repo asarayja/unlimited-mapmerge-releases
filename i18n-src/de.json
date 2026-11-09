@@ -32,7 +32,7 @@
  "w3_t": "Verschlüsselte Dateien bleiben zu",
  "w3_d": "Escrow-gesperrte Dateien werden einzeln erkannt, nach Pfad aufgelistet und nie geöffnet, entschlüsselt, bearbeitet oder zusammengeführt. Eine Ressource kann auch nur teilweise verschlüsselt sein, deshalb werden die unverschlüsselten Dateien daneben ganz normal verarbeitet.",
  "w4_t": "Nutzt dein eigenes GTA V als Basis",
- "w4_d": "Um eine Änderung von dem zu unterscheiden, was das Spiel schon hatte, wird jede Kopie mit der Datei des Spiels verglichen, die aus deiner eigenen GTA-V-Installation gelesen wird. Sie wird automatisch gefunden und CodeWalker wird nicht benötigt. Das Programm enthält keine Rockstar-Dateien.",
+ "w4_d": "Um eine Änderung von dem zu unterscheiden, was das Spiel schon hatte, wird jede Kopie mit der Datei des Spiels verglichen, die aus deiner eigenen GTA-V-Installation gelesen wird. Das Programm enthält keine Rockstar-Dateien.",
  "w5_t": "Prüft vorher und nachher",
  "w5_d": "Ein Schnelltest zeigt, was kollidiert, ein Gesundheitscheck findet, was im Spiel schiefgehen kann, und ein Crash-Check liest einen <code>CfxCrashDump</code> und sagt in einfachen Zeilen, was er gefunden hat. Jede geschriebene Datei wird zurückgelesen, bevor sie exportiert werden darf.",
  "w6_t": "Optionaler KI-Helfer",

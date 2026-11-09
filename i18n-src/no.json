@@ -32,7 +32,7 @@
  "w3_t": "Krypterte filer forblir lukket",
  "w3_d": "Escrow-låste filer oppdages én for én, listes opp med sti og blir aldri åpnet, dekryptert, redigert eller slått sammen. En ressurs kan være bare delvis kryptert, så de vanlige filene ved siden av behandles som normalt.",
  "w4_t": "Bruker din egen GTA V som grunnlag",
- "w4_d": "For å skille en endring fra det spillet allerede hadde, sammenlignes hver kopi med spillets fil, lest fra din egen GTA V-installasjon. Den finnes av seg selv, og du trenger ikke CodeWalker. Ingen Rockstar-filer følger med programmet.",
+ "w4_d": "For å skille en endring fra det spillet allerede hadde, sammenlignes hver kopi med spillets fil, lest fra din egen GTA V-installasjon. Ingen Rockstar-filer følger med programmet.",
  "w5_t": "Sjekker før og etter",
  "w5_d": "En hurtigsjekk viser hva som kolliderer, en helsesjekk finner det som kan gå galt i spillet, og en krasjsjekk leser en <code>CfxCrashDump</code> og sier med enkle linjer hva den fant. Hver fil som skrives, leses tilbake før den kan eksporteres.",
  "w6_t": "Valgfri KI-hjelper",

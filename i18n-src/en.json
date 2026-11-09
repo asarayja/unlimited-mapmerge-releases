@@ -32,7 +32,7 @@
  "w3_t": "Encrypted files stay closed",
  "w3_d": "Escrow-locked files are detected one by one, listed by path and never opened, decrypted, edited or merged. A resource can be only partly encrypted, so the plain files next to them are worked with as normal.",
  "w4_t": "Uses your own GTA V as the base",
- "w4_d": "To tell a change from what the game already had, each copy is compared with the game's file, read from your own GTA V install. It is found by itself and no CodeWalker is needed. No Rockstar file ships with the program.",
+ "w4_d": "To tell a change from what the game already had, each copy is compared with the game's file, read from your own GTA V install. No Rockstar file ships with the program.",
  "w5_t": "Checks before and after",
  "w5_d": "A quick check shows what collides, a health check finds what can go wrong in game, and a crash check reads a <code>CfxCrashDump</code> and says in plain lines what it found. Every file written is read back before it may be exported.",
  "w6_t": "Optional AI helper",

@@ -32,7 +32,7 @@
  "w3_t": "Versleutelde bestanden blijven gesloten",
  "w3_d": "Escrow-vergrendelde bestanden worden één voor één herkend, per pad vermeld en nooit geopend, ontsleuteld, bewerkt of samengevoegd. Een resource kan maar deels versleuteld zijn, dus de gewone bestanden ernaast worden gewoon verwerkt.",
  "w4_t": "Gebruikt je eigen GTA V als basis",
- "w4_d": "Om een wijziging te onderscheiden van wat de game al had, wordt elke kopie vergeleken met het bestand van de game, gelezen uit je eigen GTA V-installatie. Die wordt vanzelf gevonden en CodeWalker is niet nodig. Er zit geen enkel Rockstar-bestand in het programma.",
+ "w4_d": "Om een wijziging te onderscheiden van wat de game al had, wordt elke kopie vergeleken met het bestand van de game, gelezen uit je eigen GTA V-installatie. Er zit geen enkel Rockstar-bestand in het programma.",
  "w5_t": "Controles ervoor en erna",
  "w5_d": "Een snelle controle toont wat botst, een gezondheidscontrole vindt wat er in de game mis kan gaan en een crashcontrole leest een <code>CfxCrashDump</code> en zegt in gewone zinnen wat het vond. Elk geschreven bestand wordt teruggelezen voordat het geëxporteerd mag worden.",
  "w6_t": "Optionele AI-hulp",

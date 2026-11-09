@@ -32,7 +32,7 @@
  "w3_t": "Krüpteeritud failid jäävad suletuks",
  "w3_d": "Escrow-lukustatud failid tuvastatakse ükshaaval, loetletakse tee järgi ning neid ei avata, ei dekrüpteerita, ei muudeta ega ühendata. Ressurss võib olla krüpteeritud vaid osaliselt, nii et nende kõrval olevate lihtfailidega töötatakse nagu tavaliselt.",
  "w4_t": "Kasutab alusena sinu enda GTA V-d",
- "w4_d": "Et eristada muudatust sellest, mis mängus juba oli, võrreldakse iga koopiat mängu failiga, mis loetakse sinu enda GTA V paigaldusest. See leitakse automaatselt ja CodeWalkerit pole vaja. Programmiga ei kaasne ühtegi Rockstari faili.",
+ "w4_d": "Et eristada muudatust sellest, mis mängus juba oli, võrreldakse iga koopiat mängu failiga, mis loetakse sinu enda GTA V paigaldusest. Programmiga ei kaasne ühtegi Rockstari faili.",
  "w5_t": "Kontrollid enne ja pärast",
  "w5_d": "Kiirkontroll näitab, mis põrkub, tervisekontroll leiab, mis võib mängus valesti minna, ja krahhikontroll loeb faili <code>CfxCrashDump</code> ning ütleb lihtsate ridadega, mida leidis. Iga kirjutatud fail loetakse tagasi enne, kui seda tohib eksportida.",
  "w6_t": "Valikuline AI-abiline",

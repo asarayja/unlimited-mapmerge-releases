@@ -32,7 +32,7 @@
  "w3_t": "Arquivos criptografados continuam fechados",
  "w3_d": "Arquivos bloqueados por escrow são detectados um a um, listados por caminho e nunca abertos, descriptografados, editados nem unidos. Um resource pode estar apenas parcialmente criptografado, então os arquivos simples ao lado deles são tratados normalmente.",
  "w4_t": "Usa o seu próprio GTA V como base",
- "w4_d": "Para distinguir uma alteração do que o jogo já tinha, cada cópia é comparada com o arquivo do jogo, lido da sua própria instalação do GTA V. Ele é encontrado automaticamente e não é preciso ter o CodeWalker. Nenhum arquivo da Rockstar acompanha o programa.",
+ "w4_d": "Para distinguir uma alteração do que o jogo já tinha, cada cópia é comparada com o arquivo do jogo, lido da sua própria instalação do GTA V. Nenhum arquivo da Rockstar acompanha o programa.",
  "w5_t": "Verifica antes e depois",
  "w5_d": "Uma verificação rápida mostra o que colide, uma verificação de integridade encontra o que pode dar errado no jogo, e uma verificação de crash lê um <code>CfxCrashDump</code> e diz em linhas simples o que encontrou. Todo arquivo gravado é lido de volta antes de poder ser exportado.",
  "w6_t": "Assistente de IA opcional",

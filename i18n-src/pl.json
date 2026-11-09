@@ -32,7 +32,7 @@
  "w3_t": "Zaszyfrowane pliki pozostają zamknięte",
  "w3_d": "Pliki zablokowane przez escrow są wykrywane pojedynczo, wypisywane ze ścieżką i nigdy nie są otwierane, odszyfrowywane, edytowane ani scalane. Zasób może być zaszyfrowany tylko częściowo, więc zwykłe pliki obok nich są przetwarzane normalnie.",
  "w4_t": "Używa Twojego własnego GTA V jako bazy",
- "w4_d": "Aby odróżnić zmianę od tego, co gra już miała, każda kopia jest porównywana z plikiem gry odczytanym z Twojej własnej instalacji GTA V. Program znajduje ją sam i CodeWalker nie jest potrzebny. Żaden plik Rockstar nie jest dołączony do programu.",
+ "w4_d": "Aby odróżnić zmianę od tego, co gra już miała, każda kopia jest porównywana z plikiem gry odczytanym z Twojej własnej instalacji GTA V. Żaden plik Rockstar nie jest dołączony do programu.",
  "w5_t": "Kontrole przed i po",
  "w5_d": "Szybka kontrola pokazuje, co się zderza, kontrola kondycji znajduje to, co może pójść źle w grze, a kontrola crasha czyta <code>CfxCrashDump</code> i prostymi słowami mówi, co znalazła. Każdy zapisany plik jest odczytywany z powrotem, zanim może zostać wyeksportowany.",
  "w6_t": "Opcjonalny pomocnik AI",

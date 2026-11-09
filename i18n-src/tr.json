@@ -32,7 +32,7 @@
  "w3_t": "Şifreli dosyalar kapalı kalır",
  "w3_d": "Escrow ile kilitli dosyalar tek tek tespit edilir, yolları listelenir ve asla açılmaz, çözülmez, düzenlenmez veya birleştirilmez. Bir kaynak yalnızca kısmen şifreli olabilir, bu yüzden yanındaki açık dosyalarla normal şekilde çalışılır.",
  "w4_t": "Taban olarak kendi GTA V'inizi kullanır",
- "w4_d": "Bir değişikliği oyunda zaten var olandan ayırmak için her kopya, kendi GTA V kurulumunuzdan okunan oyun dosyasıyla karşılaştırılır. Kurulum kendiliğinden bulunur ve CodeWalker gerekmez. Programla birlikte hiçbir Rockstar dosyası gelmez.",
+ "w4_d": "Bir değişikliği oyunda zaten var olandan ayırmak için her kopya, kendi GTA V kurulumunuzdan okunan oyun dosyasıyla karşılaştırılır. Programla birlikte hiçbir Rockstar dosyası gelmez.",
  "w5_t": "Öncesinde ve sonrasında kontrol",
  "w5_d": "Hızlı kontrol nelerin çakıştığını gösterir, sağlık kontrolü oyunda neyin ters gidebileceğini bulur, çökme kontrolü ise bir <code>CfxCrashDump</code> dosyasını okuyup bulduklarını sade satırlarla söyler. Yazılan her dosya, dışa aktarılmadan önce geri okunur.",
  "w6_t": "İsteğe bağlı yapay zekâ yardımcısı",
