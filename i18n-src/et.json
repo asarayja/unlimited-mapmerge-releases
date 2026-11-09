@@ -147,5 +147,10 @@
  "dc_sub": "Tugi, veateated ja ideed Unlimited MapMerge'i ja ülejäänud Unlimitedi kohta.",
  "dc_btn": "Ava Unlimited Discord",
  "f_lic": "© 2026 Unlimited Reforge · tasuta kasutada, vaata LICENSE",
- "f_rock": "Sõltumatu: pole seotud Rockstar Gamesi, Take-Twoga ega Cfx.re-ga. Grand Theft Auto V on Rockstar Gamesi omand."
+ "f_rock": "Sõltumatu: pole seotud Rockstar Gamesi, Take-Twoga ega Cfx.re-ga. Grand Theft Auto V on Rockstar Gamesi omand.",
+ "ss_btn": "Otsi lehelt",
+ "ss_ph": "Otsi lehelt…",
+ "ss_none": "Midagi ei leitud. Proovi muud sõna.",
+ "ss_more": "Veel {n} tulemust. Kirjuta rohkem, et kitsendada.",
+ "ss_close": "Sulge otsing"
 }

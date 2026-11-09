@@ -147,5 +147,10 @@
  "dc_sub": "Unlimited MapMerge 以及 Unlimited 其他产品的支持、Bug 报告和想法交流。",
  "dc_btn": "打开 Unlimited Discord",
  "f_lic": "© 2026 Unlimited Reforge · 免费使用，详见 LICENSE",
- "f_rock": "独立项目：与 Rockstar Games、Take-Two 或 Cfx.re 无任何关联。Grand Theft Auto V 是 Rockstar Games 的财产。"
+ "f_rock": "独立项目：与 Rockstar Games、Take-Two 或 Cfx.re 无任何关联。Grand Theft Auto V 是 Rockstar Games 的财产。",
+ "ss_btn": "搜索本站",
+ "ss_ph": "搜索本站…",
+ "ss_none": "没有找到结果，请换个词试试。",
+ "ss_more": "还有 {n} 条结果，输入更多内容以缩小范围。",
+ "ss_close": "关闭搜索"
 }

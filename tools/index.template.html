@@ -22,11 +22,16 @@
    <button id="moreBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="moreList" data-ia="nav_more"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
    <div id="moreList" class="more-list" hidden></div>
   </div>
+  <button id="searchBtn" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="siteSearch"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
   <button id="themeBtn" type="button" data-ia="theme_light"><svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
   <div class="lang">
    <button id="langBtn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="langList"><img id="langFlag" src="flags/en.png" width="20" height="14" alt=""><span id="langCode">EN</span><span aria-hidden="true">&#9662;</span></button>
    <ul id="langList" role="listbox" hidden></ul>
   </div>
+ </div>
+ <div id="siteSearch" class="ss" role="dialog" hidden>
+  <div class="ss-field"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="siteSearchInput" type="search" autocomplete="off" spellcheck="false" role="combobox" aria-controls="siteSearchRes" aria-expanded="true"><button id="siteSearchClose" type="button" data-ia="ss_close" aria-label="Close search" title="Close search"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <ul id="siteSearchRes" class="ss-res" role="listbox" hidden></ul>
  </div>
 </header>
 
@@ -203,5 +208,6 @@
 </footer>
 <script src="i18n.js"></script>
 <script src="site.js"></script>
+<script src="search.js"></script>
 </body>
 </html>

@@ -147,5 +147,10 @@
  "dc_sub": "Støtte, feilrapporter og ideer for Unlimited MapMerge og resten av Unlimited.",
  "dc_btn": "Åpne Unlimited Discord",
  "f_lic": "© 2026 Unlimited Reforge · gratis å bruke, se LICENSE",
- "f_rock": "Uavhengig: ikke tilknyttet Rockstar Games, Take-Two eller Cfx.re. Grand Theft Auto V tilhører Rockstar Games."
+ "f_rock": "Uavhengig: ikke tilknyttet Rockstar Games, Take-Two eller Cfx.re. Grand Theft Auto V tilhører Rockstar Games.",
+ "ss_btn": "Søk på siden",
+ "ss_ph": "Søk på siden…",
+ "ss_none": "Fant ingenting. Prøv et annet ord.",
+ "ss_more": "{n} treff til. Skriv mer for å snevre inn.",
+ "ss_close": "Lukk søket"
 }

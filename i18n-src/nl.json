@@ -147,5 +147,10 @@
  "dc_sub": "Support, bugmeldingen en ideeën voor Unlimited MapMerge en de rest van Unlimited.",
  "dc_btn": "Open de Unlimited Discord",
  "f_lic": "© 2026 Unlimited Reforge · gratis te gebruiken, zie LICENSE",
- "f_rock": "Onafhankelijk: niet verbonden met Rockstar Games, Take-Two of Cfx.re. Grand Theft Auto V is eigendom van Rockstar Games."
+ "f_rock": "Onafhankelijk: niet verbonden met Rockstar Games, Take-Two of Cfx.re. Grand Theft Auto V is eigendom van Rockstar Games.",
+ "ss_btn": "Zoeken op de site",
+ "ss_ph": "Zoeken op de site…",
+ "ss_none": "Niets gevonden. Probeer een ander woord.",
+ "ss_more": "Nog {n} resultaten. Typ meer om te verfijnen.",
+ "ss_close": "Zoeken sluiten"
 }

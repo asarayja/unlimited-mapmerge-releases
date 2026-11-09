@@ -147,5 +147,10 @@
  "dc_sub": "Unlimited MapMerge மற்றும் Unlimited-இன் மற்றவற்றுக்கான ஆதரவு, பிழை அறிக்கைகள் மற்றும் யோசனைகள்.",
  "dc_btn": "Unlimited Discord-ஐத் திறக்கவும்",
  "f_lic": "© 2026 Unlimited Reforge · இலவசமாகப் பயன்படுத்தலாம், LICENSE-ஐப் பாருங்கள்",
- "f_rock": "சுயாதீனமானது: Rockstar Games, Take-Two அல்லது Cfx.re உடன் தொடர்பில்லை. Grand Theft Auto V என்பது Rockstar Games-இன் சொத்து."
+ "f_rock": "சுயாதீனமானது: Rockstar Games, Take-Two அல்லது Cfx.re உடன் தொடர்பில்லை. Grand Theft Auto V என்பது Rockstar Games-இன் சொத்து.",
+ "ss_btn": "தளத்தில் தேடு",
+ "ss_ph": "தளத்தில் தேடு…",
+ "ss_none": "எதுவும் கிடைக்கவில்லை. வேறு சொல்லை முயற்சிக்கவும்.",
+ "ss_more": "இன்னும் {n} முடிவுகள். குறைக்க மேலும் தட்டச்சு செய்யவும்.",
+ "ss_close": "தேடலை மூடு"
 }

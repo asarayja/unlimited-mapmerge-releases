@@ -128,3 +128,29 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
 
 .grid2.wide{grid-template-columns:repeat(auto-fit,minmax(min(440px,100%),1fr))}
 .grid2.wide .box{margin:0}
+
+/* site search (same as the Unlimited Cloth site) */
+#searchBtn{display:flex;align-items:center;justify-content:center;width:36px;height:34px;padding:0;flex:none;align-self:center;background:var(--ctl);color:var(--text);border:1px solid var(--line);border-radius:10px;cursor:pointer}
+#searchBtn:hover,#searchBtn[aria-expanded=true]{background:var(--ctl-hov)}
+#searchBtn svg{display:block}
+.ss{position:absolute;right:max(16px,calc((100vw - 1080px)/2));top:calc(100% + 8px);width:min(560px,calc(100vw - 32px));background:var(--pop);border:1px solid var(--pop-bd);border-radius:14px;box-shadow:var(--pop-sh,0 18px 50px rgba(0,0,0,.35));overflow:hidden;z-index:30}
+.ss[hidden]{display:none}
+.ss-field{display:flex;align-items:center;gap:10px;padding:10px 12px;border-bottom:1px solid var(--line);color:var(--sub)}
+.ss-field input{flex:1;min-width:0;border:0;outline:0;background:transparent;color:var(--text);font:inherit;font-size:1rem;padding:4px 0}
+.ss-field input::-webkit-search-cancel-button{display:none}
+#siteSearchClose{display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;border:0;border-radius:8px;background:transparent;color:var(--sub);cursor:pointer}
+#siteSearchClose:hover{background:var(--ctl-hov);color:var(--text)}
+.ss-res{list-style:none;margin:0;padding:6px;max-height:min(60vh,520px);overflow-y:auto}
+.ss-res[hidden]{display:none}
+.ss-res li{display:flex;flex-direction:column;gap:2px;padding:9px 10px;border-radius:9px;cursor:pointer}
+.ss-res li.on{background:var(--sel)}
+.ss-where{font-size:.76rem;font-weight:600;color:var(--link);text-transform:none}
+.ss-snip{font-size:.9rem;color:var(--sub);line-height:1.45;word-break:break-word}
+.ss-snip.ss-code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.84rem}
+.ss-snip mark{background:rgba(139,92,246,.32);color:var(--text);border-radius:3px;padding:0 1px}
+:root[data-theme=light] .ss-snip mark{background:rgba(99,102,241,.22)}
+.ss-res li.ss-none{cursor:default;color:var(--sub);font-size:.9rem}
+.ss-flash{animation:ssflash 2.2s ease-out}
+@keyframes ssflash{0%,30%{background:rgba(139,92,246,.28);box-shadow:0 0 0 4px rgba(139,92,246,.28);border-radius:6px}100%{background:transparent;box-shadow:0 0 0 0 transparent}}
+@media (prefers-reduced-motion:reduce){.ss-flash{animation:none;outline:2px solid var(--focus)}}
+@media (max-width:600px){.ss{position:fixed;left:8px;right:8px;top:64px;width:auto}#searchBtn{width:32px;height:32px}}

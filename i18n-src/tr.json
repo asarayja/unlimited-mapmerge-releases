@@ -147,5 +147,10 @@
  "dc_sub": "Unlimited MapMerge ve Unlimited'ın geri kalanı için destek, hata bildirimleri ve fikirler.",
  "dc_btn": "Unlimited Discord'unu aç",
  "f_lic": "© 2026 Unlimited Reforge · ücretsiz kullanım, bkz. LICENSE",
- "f_rock": "Bağımsızdır: Rockstar Games, Take-Two veya Cfx.re ile bağlantılı değildir. Grand Theft Auto V, Rockstar Games'in malıdır."
+ "f_rock": "Bağımsızdır: Rockstar Games, Take-Two veya Cfx.re ile bağlantılı değildir. Grand Theft Auto V, Rockstar Games'in malıdır.",
+ "ss_btn": "Sitede ara",
+ "ss_ph": "Sitede ara…",
+ "ss_none": "Hiçbir şey bulunamadı. Başka bir kelime dene.",
+ "ss_more": "{n} sonuç daha. Daraltmak için daha fazla yaz.",
+ "ss_close": "Aramayı kapat"
 }

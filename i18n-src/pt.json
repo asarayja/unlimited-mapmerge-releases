@@ -147,5 +147,10 @@
  "dc_sub": "Suporte, relatos de bugs e ideias para o Unlimited MapMerge e o resto da Unlimited.",
  "dc_btn": "Abrir o Discord da Unlimited",
  "f_lic": "© 2026 Unlimited Reforge · uso gratuito, veja LICENSE",
- "f_rock": "Independente: sem afiliação com a Rockstar Games, a Take-Two ou a Cfx.re. Grand Theft Auto V é propriedade da Rockstar Games."
+ "f_rock": "Independente: sem afiliação com a Rockstar Games, a Take-Two ou a Cfx.re. Grand Theft Auto V é propriedade da Rockstar Games.",
+ "ss_btn": "Pesquisar no site",
+ "ss_ph": "Pesquisar no site…",
+ "ss_none": "Nada encontrado. Experimenta outra palavra.",
+ "ss_more": "Mais {n} resultados. Escreve mais para afinar.",
+ "ss_close": "Fechar pesquisa"
 }
