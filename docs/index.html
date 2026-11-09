@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i="meta_title">Unlimited MapMerge: merge clashing FiveM map files</title>
+<meta name="description" data-meta="meta_desc" content="Unlimited MapMerge is a free Windows program that finds and merges conflicting GTA V map and world files (ymap, ybn, ydr, scenarios and more) from FiveM resources, on your own machine, into a new folder. Your originals are never changed.">
+<meta name="theme-color" content="#0b1020">
+<link rel="icon" href="img/logo-128.png">
+<link rel="stylesheet" href="style.css">
+<script>(function(){try{if(localStorage.getItem('ummerge-theme')==='light'){document.documentElement.setAttribute('data-theme','light');document.querySelector('meta[name=theme-color]').setAttribute('content','#f4f6fc');}}catch(e){}})();</script>
+</head>
+<body>
+<a class="skip" href="#main" data-i="skip">Skip to content</a>
+<header class="top">
+ <div class="wrap bar">
+  <a class="brand" href="#top"><img src="img/logo-128.png" width="32" height="32" alt=""><span>Unlimited <b>MapMerge</b></span></a>
+  <nav aria-label="Main">
+   <a href="#what" data-i="nav_what">Features</a><a href="#download" data-i="nav_dl">Download</a><a href="#install" data-i="nav_install">Install</a><a href="#how" data-i="nav_how">How it works</a><a href="#kinds" data-i="nav_kinds">Merged files</a><a href="#server" data-i="nav_server">On the server</a><a href="#checks" data-i="nav_checks">Checks</a><a href="#ai" data-i="nav_ai">AI helper</a><a href="#faq" data-i="nav_faq">FAQ</a><a href="#changelog" data-i="nav_changelog">Changelog</a>
+  </nav>
+  <div class="more" id="navMore" hidden>
+   <button id="moreBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="moreList" data-ia="nav_more" aria-label="More" title="More"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+   <div id="moreList" class="more-list" hidden></div>
+  </div>
+  <button id="themeBtn" type="button" data-ia="theme_light" aria-label="Switch to light mode" title="Switch to light mode"><svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+  <div class="lang">
+   <button id="langBtn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="langList"><img id="langFlag" src="flags/en.png" width="20" height="14" alt=""><span id="langCode">EN</span><span aria-hidden="true">&#9662;</span></button>
+   <ul id="langList" role="listbox" hidden></ul>
+  </div>
+ </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+ <div class="wrap">
+  <img class="logo" src="img/logo-256.png" width="112" height="112" alt="Unlimited MapMerge logo">
+  <p class="badge" data-i="h_badge">Free · Windows · version 1.0.0</p>
+  <h1 data-i="h_title">Merge clashing FiveM map files, safely</h1>
+  <p class="lead" data-i="h_sub">When two MLOs or map resources stream the same game file, only one copy wins and the other map breaks: props come back, walls vanish, lights hang in the air. Unlimited MapMerge finds those clashes, merges them against the game's own file and writes the result to a new folder. Your originals are never touched.</p>
+  <p class="cta"><a class="btn primary" href="#download" data-i="h_dl">Download 1.0.0</a><a class="btn" href="#how" data-i="h_how">How it works</a><a class="btn" href="https://discord.gg/uaASPkghXu" rel="noopener">Discord</a></p>
+  <p class="note" data-i="h_note">No account, no upload, no limits, no telemetry. Everything runs on your own machine. Made by Unlimited Reforge.</p>
+  <div class="shot"><img src="img/review.webp" width="1360" height="900" data-alt="alt_review" alt="The merge review: the clashing files, with the file that has an encrypted copy marked as locked" fetchpriority="high"></div>
+ </div>
+</section>
+
+<section class="wrap" id="what">
+ <h2 data-i="w_title">What it does</h2>
+ <p class="sub" data-i="w_sub">From a pile of map resources to one folder you can put on the server, with a check at every step.</p>
+ <div class="grid">
+  <article class="card"><h3 data-i="w1_t">Merges the clash</h3><p data-h="w1_d">Files that more than one resource supplies are grouped and merged three ways against the game's own file: what each map added and what each map removed on purpose are both kept. Where the program is not sure it reports an Error or Warning and leaves the original alone.</p></article>
+  <article class="card"><h3 data-i="w2_t">Never touches your originals</h3><p data-h="w2_d">The export is a <b>new</b> folder: copies of your resources with the merged files taken out, plus a merge resource. Your folders are opened for reading only, and <code>server.cfg</code> is never edited. To undo, put your old folders back.</p></article>
+  <article class="card"><h3 data-i="w3_t">Encrypted files stay closed</h3><p data-h="w3_d">Escrow-locked files are detected one by one, listed by path and never opened, decrypted, edited or merged. A resource can be only partly encrypted, so the plain files next to them are worked with as normal.</p></article>
+  <article class="card"><h3 data-i="w4_t">Uses your own GTA V as the base</h3><p data-h="w4_d">To tell a change from what the game already had, each copy is compared with the game's file, read from your own GTA V install. It is found by itself and no CodeWalker is needed. No Rockstar file ships with the program.</p></article>
+  <article class="card"><h3 data-i="w5_t">Checks before and after</h3><p data-h="w5_d">A quick check shows what collides, a health check finds what can go wrong in game, and a crash check reads a <code>CfxCrashDump</code> and says in plain lines what it found. Every file written is read back before it may be exported.</p></article>
+  <article class="card"><h3 data-i="w6_t">Optional AI helper</h3><p data-h="w6_d">Off if you want it off. It reads the program's findings, reports and logs and explains what to do. By default it can only read; it can be allowed to fix files in its own copy of the export, never in your originals.</p></article>
+ </div>
+ <div class="gallery">
+  <figure><img src="img/quick-check.webp" width="1360" height="900" loading="lazy" data-alt="c_check" alt="The quick check: which files your resources fight over"><figcaption data-h="c_check">The quick check: which files your resources fight over</figcaption></figure>
+  <figure><img src="img/result.webp" width="1360" height="900" loading="lazy" data-alt="c_result" alt="The result: what was fixed and what needs your choice"><figcaption data-h="c_result">The result: what was fixed and what needs your choice</figcaption></figure>
+  <figure><img src="img/install.webp" width="1360" height="900" loading="lazy" data-alt="c_install" alt="After the export: the install steps for your server"><figcaption data-h="c_install">After the export: the install steps for your server</figcaption></figure>
+ </div>
+</section>
+
+<section class="wrap" id="download">
+ <h2 data-i="d_title">Download</h2>
+ <p class="sub" data-i="d_sub">Version 1.0.0 for Windows. The installer is on the GitHub release page, together with the release notes.</p>
+ <div class="dl">
+  <a class="card" href="https://github.com/asarayja/unlimited-mapmerge-releases/releases/latest"><h3>Windows <span class="tag">x64</span></h3><p data-i="d_win_d">Installer: pick a folder, get shortcuts, uninstall from Apps.</p><span class="file">Unlimited-MapMerge-Setup-1.0.0.exe</span></a>
+ </div>
+ <p class="note"><a href="https://github.com/asarayja/unlimited-mapmerge-releases/releases" data-i="d_all">All releases</a> · <span data-i="d_note">Windows 64-bit. Nothing else has to be installed.</span></p>
+</section>
+
+<section class="wrap" id="install">
+ <h2 data-i="i_title">Install</h2>
+ <div class="grid2">
+  <article class="card"><h3>Windows</h3>
+   <ol data-h="i_win_steps"><li>Run <code>Unlimited-MapMerge-Setup-1.0.0.exe</code>.</li><li>Pick the install folder. Desktop and Start menu shortcuts are made.</li><li>Start it. A short first-run setup asks for your language and looks for your GTA V by itself.</li><li>Uninstall later under Settings → Apps.</li></ol>
+   <div class="box warn" data-h="i_win_warn"><b>"Windows protected your PC" / unknown publisher.</b> The installer is signed with Unlimited Reforge's own certificate, not one bought from a certificate authority, so Windows does not know the publisher yet and Microsoft SmartScreen may stop it the first time. Click <b>More info</b>, check that the file name is the one from the release page and that you got it from there, then click <b>Run anyway</b>. This is normal for a self-signed program and does not mean the file is damaged.</div>
+  </article>
+  <article class="card"><h3 data-i="i_game_t">Your GTA V</h3><p data-h="i_game_d">The program looks for GTA V in the Rockstar launcher's and Steam's registry entries, in every Steam library, in Epic's manifests and in the usual folders. If it is not found, nothing is blocked: a merge that needs the game's own files asks for it then. You never have to point it at a server.</p></article>
+ </div>
+</section>
+
+<section class="wrap" id="how">
+ <h2 data-i="how_title">How it works</h2>
+ <p class="sub" data-i="how_sub">Four steps, shown at the top of the Merge page.</p>
+ <div class="grid">
+  <article class="card"><h3>1 · <span data-i="s1_t">Resources</span></h3><p data-h="s1_d">Add the folders of the map resources, or a whole <code>resources</code> folder. Only names and file headers are read at this stage. A <code>server.cfg</code> next to them is found by itself or can be picked or dropped: only its <code>ensure</code>, <code>start</code>, <code>stop</code> and <code>exec</code> lines are used, to learn the start order and to suggest the game build. No line of the file is kept or shown.</p></article>
+  <article class="card"><h3>2 · <span data-i="s2_t">What to fix</span></h3><p data-h="s2_d">Nothing is ticked until you tick it. Pick what is wrong in game (flickering, missing props, floating lights, invisible walls and so on), by resource, or from all files, and search by file, resource or symptom. Merging what already works can only add risk, so leave it out.</p></article>
+  <article class="card"><h3>3 · <span data-i="s3_t">Result</span></h3><p data-h="s3_d">You see what was merged, what was left unchanged and what needs your choice. For a file the program cannot merge safely you choose: this copy, that copy, or a union where that is safe. Then run again with your choices.</p></article>
+  <article class="card"><h3>4 · <span data-i="s4_t">Export</span></h3><p data-h="s4_d">Everything is written to one new folder. Before you install it, the export is checked again and the result is in <code>export-log.txt</code>. The install page lists exactly what to do next.</p></article>
+ </div>
+ <div class="grid2" style="margin-top:14px">
+  <article class="card"><h3 data-i="prio_t">Order is priority</h3><p data-h="prio_d">The resource lower in the list wins when two copies change the same thing. Set it like your <code>server.cfg</code> start order. When the program reads a <code>server.cfg</code> it also marks the copy the game uses today: FiveM registers streamed files in one sorted pass when a player joins, so the resource whose name sorts last wins. That is an assumption about FiveM, and the merge resource wins over every copy anyway when runtime registration is on, which is the default.</p></article>
+  <article class="card"><h3 data-i="build_t">Game build</h3><p data-h="build_d">A merge is made for one game build. The list runs from 1604 (<code>mpchristmas2018</code>) to 3889 (<code>mp2026_01</code>). The default is 3570, the newest build FiveM supports today. If your <code>server.cfg</code> sets <code>sv_enforceGameBuild</code>, that build is suggested. Door tuning needs at least <code>mpsecurity</code> (2545) and the program suggests at least that build when door tuning is in the merge.</p></article>
+ </div>
+</section>
+
+<section class="wrap" id="kinds">
+ <h2 data-i="k_title">What it merges</h2>
+ <p class="sub" data-i="k_sub">Every merged file is read back and checked before it may be exported. When the engine is not sure it reports it and leaves the original.</p>
+ <div class="tbl"><table>
+  <tr><th data-i="k_type">File</th><th data-i="k_how">How</th></tr>
+  <tr><td><code>.ymap</code></td><td data-h="k_ymap">Entities (with LOD links across files), car generators, time cycle modifiers, occluders, grass and physics lists, record by record. A record one map removed on purpose stays removed.</td></tr>
+  <tr><td>LOD lights</td><td data-h="k_lod"><code>vw_lodlights_*</code> and <code>vw_distlodlights_*</code> as one matching list. Never one file without the other.</td></tr>
+  <tr><td><code>.ybn</code></td><td data-h="k_ybn">Polygon by polygon, with the BVH rebuilt.</td></tr>
+  <tr><td>Scenario <code>.ymt</code></td><td data-h="k_scn">Points, overrides, clusters and chains; names and lookup grid rebuilt. There is also a page for scenario files alone.</td></tr>
+  <tr><td><code>.ytyp</code></td><td data-h="k_ytyp">By archetype name. Props that appear twice with the same model are kept once; different ones are reported.</td></tr>
+  <tr><td><code>doortuning.ymt</code>, <code>water.xml</code>, <code>gta5.meta</code></td><td data-h="k_level">One unit, written to a separate level resource with <code>replace_level_meta</code>.</td></tr>
+  <tr><td><code>.ynd</code></td><td data-h="k_ynd">Node by node, keeping the numbers other squares link to. Left unchanged when that cannot hold.</td></tr>
+  <tr><td><code>.ydr</code></td><td data-h="k_ydr">Static models, mesh by mesh and only with the same shaders. Otherwise an Error and you pick.</td></tr>
+  <tr><td><code>.ynv</code></td><td data-h="k_ynv">Not merged. If only one copy changed it, that copy is taken. If both changed it, you pick one.</td></tr>
+  <tr><td><code>_manifest.ymf</code></td><td data-h="k_ymf">Not merged. Each resource keeps its own manifest file.</td></tr>
+ </table></div>
+ <div class="box info" style="margin-top:14px" data-h="k_nobase"><b>No base, no merge.</b> If there is no game file and no common ancestor and the copies differ, you get an Error and a choice, never a guess. A union is only offered where it is safe, and it says that every removal is lost.</div>
+</section>
+
+<section class="wrap" id="server">
+ <h2 data-i="srv_title">On the server</h2>
+ <p class="sub" data-h="srv_sub">The export folder is named <code>[unlimited_merge_ID]</code>. It holds:</p>
+ <pre><code data-t="srv_tree">[unlimited_merge_ID]/
+  (a copy of each resource, with the merged files removed)
+  unlimited_merge_resource/       the merged stream files
+  unlimited_merge_level_ID/       merged water and door tuning, when any
+  README.txt, export-report.txt, export-report.json, export-log.txt</code></pre>
+ <div class="card" style="margin-top:14px">
+  <ol data-h="srv_steps"><li>Take a backup of your <code>resources</code> folder and <code>server.cfg</code>.</li><li>Move the original folders that were merged out of <code>resources</code>, to somewhere safe, and put the copies from the export in their place. Copy <code>unlimited_merge_resource</code> (and <code>unlimited_merge_level_ID</code>, if there is one) into <code>resources</code> too.</li><li>Your folders keep the <code>ensure</code> lines they already have. Add the merge to <code>server.cfg</code> <b>after</b> them. The program never edits <code>server.cfg</code>; those lines are yours.</li><li>Restart the server completely (not a resource restart) and clear your client cache if a file looks unchanged.</li><li>Go to the merged area in game and check props, walls, doors, water and traffic.</li></ol>
+  <pre><code data-t="srv_cfg">ensure my_first_mlo
+ensure my_second_mlo
+ensure unlimited_merge_resource
+ensure unlimited_merge_level_1a2b3c4d   # only if the export has one</code></pre>
+ </div>
+ <div class="grid2 wide" style="margin-top:14px">
+  <div class="box info" data-h="srv_undo"><b>To undo:</b> put your old folders back and remove <code>unlimited_merge_resource</code> and the level resource. Nothing in your old folders was changed.</div>
+  <div class="box info" data-h="srv_rt"><b>Runtime registration.</b> The merge resource registers its files when the game runs, so the merged copies win over every other copy. It is on by default. If a merged file does not take effect, check that the merge starts last and that you restarted fully.</div>
+  <div class="box info" data-h="srv_nowait"><b>The merge does not wait for the resources it merged.</b> A resource that cannot start, such as an encrypted one with an expired licence, therefore no longer stops the whole merge. This can be changed under the export options, but it is not recommended.</div>
+  <div class="box warn" data-h="srv_enc"><b>Encrypted copies.</b> By default an encrypted copy and any resource with a <code>.fxap</code> are copied byte for byte and left exactly as they are, and they must start before the merge. When one stays, runtime registration is switched on so the merged file can win. Removing merged files from an escrowed copy is an opt-in that can stop it from loading at all.</div>
+ </div>
+</section>
+
+<section class="wrap" id="checks">
+ <h2 data-i="ch_title">Checks</h2>
+ <p class="sub" data-i="ch_sub">Three tools that change nothing and need no game, plus two more.</p>
+ <div class="grid">
+  <article class="card"><h3 data-i="chk1_t">Quick check</h3><p data-h="chk1_d">Drop folders, a whole resources folder or a <code>server.cfg</code>, and see which files collide: type, resources, identical or really different, and which copy wins today. No game, no setup. <b>Fix these</b> carries on into the merge.</p></article>
+  <article class="card"><h3 data-i="chk2_t">Health check</h3><p data-h="chk2_d">Slower, and it reads inside the files. Reports per resource, with severity, path and what it means in game: oversized, non-power-of-two, uncompressed or mip-less textures, texture memory, files too large to stream, objects whose model is not found, props defined twice, stray copies, manifest mistakes, and empty or cut-short files. The size limits are settable and are judgements, not known limits. Save the report as HTML or text.</p></article>
+  <article class="card"><h3 data-i="chk3_t">Crash check</h3><p data-h="chk3_d">Drop the <code>CfxCrashDump</code> folder or zip, or the CitizenFX log, and the export folder if the crash came after a merge. The program checks it with its own rules first: the file the game was loading, a build that does not match the merge, a merge resource that never reached the client, an expired licence, a missing scenario list, a map file with too many objects. It reads the log only and never opens the <code>.dmp</code>.</p></article>
+  <article class="card"><h3 data-i="chk4_t">Scenarios</h3><p data-h="chk4_d">A page for scenario <code>.ymt</code> files alone: ambient peds, vehicles and chains. Tick the copies of one region and they are merged by the same engine and shown on the same result pages.</p></article>
+  <article class="card"><h3 data-i="chk5_t">Server Watcher</h3><p data-h="chk5_d">Checks one resources folder when it changes, daily or on demand, and tells you what it finds, for example two MLOs in the same spot. It never edits <code>server.cfg</code> or anything in the folder. An automatic merge and export when new conflicts appear exists, and it is off by default.</p></article>
+  <article class="card"><h3 data-i="chk6_t">History and settings</h3><p data-h="chk6_d">Earlier merges are listed so you can open one again or export it once more. Settings cover the default export folder, the tray, autostart and desktop notifications.</p></article>
+ </div>
+ <div class="gallery">
+  <figure><img src="img/health.webp" width="1360" height="900" loading="lazy" data-alt="c_health" alt="The health check: what can go wrong in game"><figcaption data-h="c_health">The health check: what can go wrong in game</figcaption></figure>
+  <figure><img src="img/crash.webp" width="1360" height="900" loading="lazy" data-alt="c_crash" alt="The crash check reads a CfxCrashDump"><figcaption data-h="c_crash">The crash check reads a CfxCrashDump</figcaption></figure>
+  <figure><img src="img/review.webp" width="1360" height="900" loading="lazy" data-alt="c_review" alt="The review: tick only what is broken in game"><figcaption data-h="c_review">The review: tick only what is broken in game</figcaption></figure>
+ </div>
+</section>
+
+<section class="wrap" id="ai">
+ <h2 data-i="ai_title">AI helper (optional)</h2>
+ <p class="sub" data-i="ai_sub">Everything in MapMerge works without it, and the rules that keep a server from crashing are in the program itself. The helper explains and points at things; it is never needed.</p>
+ <div class="grid">
+  <article class="card"><h3 data-i="ai1_t">What it does</h3><ul data-h="ai1_l"><li><b>Why did the game crash?</b> It builds on the crash check and the log.</li><li><b>Go through an export</b> before it goes on the server, or the open merge before export.</li><li><b>Explain the health check.</b></li><li>It answers in your language and ends with a short list of steps.</li></ul></article>
+  <article class="card"><h3 data-i="ai2_t">What it may do</h3><ul data-h="ai2_l"><li>By default it is read-only: it reads the files and folders it is given and answers in text.</li><li>If you allow it, it gets its own copy of the export, <code>[unlimited_merge_ID_ai_TIME]</code>, and may change files in that copy only. The originals, your export and encrypted files stay as they are, and every change is listed afterwards. Run the health check on the copy before you use it.</li><li>It never reads encrypted files or <code>.rpf</code> archives and never asks for keys or passwords.</li></ul></article>
+  <article class="card"><h3 data-i="ai3_t">Providers</h3><p data-h="ai3_d">Claude Code (CLI) with your own login, Codex (CLI), Gemini (CLI), Ollama on your own machine, the Claude API (needs a key), or any OpenAI-compatible address. Pick one under Settings, or switch the helper off.</p></article>
+ </div>
+ <div class="box warn" style="margin-top:14px" data-h="ai_box"><b>What leaves your machine.</b> Only if you press an AI button: the program's findings, reports and logs go to the provider you picked. Ollama stays on your machine. Encrypted files are never sent.</div>
+</section>
+
+<section class="wrap" id="faq">
+ <h2 data-i="faq_title">FAQ and troubleshooting</h2>
+ <details><summary data-i="q1">Do I need GTA V installed?</summary><p data-h="a1">Only when two copies of a file differ and neither is contained in the other. That is most real clashes between two MLOs, because each removes its own things, so the game's file is needed to see who removed and who added. Identical copies, or one untouched copy plus one changed copy, need no game. The quick check and the health check need none either.</p></details>
+ <details><summary data-i="q2">Will it change my original folders or server.cfg?</summary><p data-h="a2">No. Originals are opened for reading only, and everything is written to a new folder. <code>server.cfg</code> is never edited.</p></details>
+ <details><summary data-i="q3">What about escrow-locked resources?</summary><p data-h="a3">Each file is judged on its own, because a resource is often only partly encrypted. Encrypted files are listed by path and never opened or changed. A clash that includes an encrypted copy stays unmerged unless you tick it; if you do, that copy's changes are not in the result and the merged file overrides it.</p></details>
+ <details><summary data-i="q4">The merge took effect only partly in game</summary><div data-h="a4"><ul><li>Check that the merge resource starts last and restart the server fully. Clear your client cache.</li><li>If it still does not win, export again with runtime registration on.</li><li>Use the crash check on a <code>CfxCrashDump</code>: if <code>unlimited_merge_resource</code> was not among the resources the client got, the merge never ran. Type <code>ensure unlimited_merge_resource</code> in the server console to see why.</li></ul></div></details>
+ <details><summary data-i="q5">A resource it waits for cannot start (expired licence)</summary><p data-h="a5">The merge resource does not wait for the resources it merged, so an encrypted resource whose licence has run out ("You lack the required entitlement") no longer stops it. Take that resource out of the server and export again.</p></details>
+ <details><summary data-i="q6">"Corrupt game data" or ERR_STR_PACK_2 on join</summary><p data-h="a6">A resource with a <code>SCENARIO_POINTS_OVERRIDE_PSO_FILE</code> line names its scenario files in <code>sp_manifest.ymt</code>. If one of them is missing when that resource loads, the game says "Corrupt game data" even though your GTA install is fine. The export keeps those scenario files in the copy so this no longer happens, and the crash check recognises it.</p></details>
+ <details><summary data-i="q7">The game crashes with "Invalid fixup"</summary><p data-h="a7">That is how the game reacts to a collision (<code>.ybn</code>) or road node (<code>.ynd</code>) file it overwrites while loading. MapMerge writes those files with free page slots, and the export stops a file that would do it. If the crash check says the file is one MapMerge made, export again with this version.</p></details>
+ <details><summary data-i="q8">Lights float in the air after a merge</summary><p data-h="a8">Far-away LOD lights live in two matching files, and each light in one lines up with the same place in the other. Check that the merge has both files, that no other resource ships either of them and that the merge starts last. A copy of the pair that was emptied by another tool is left out: the lights of the other copies and of GTA are kept, and a resource that empties them while changing the map only removes the lights in the area it changes. If it stays wrong, leave the LOD light group out of the merge. Copies with a number or "copy" in the name, such as <code>file (1).ymap</code>, stream as extra files and double the lights.</p></details>
+ <details><summary data-i="q9">It says there are no conflicts, but my map is still wrong</summary><p data-h="a9">A conflict means two resources supply the same file. A resource that changes a game file on its own is not a conflict, and two resources can clash without sharing a file name. Run the health check: it finds duplicate props, missing models, stray copies and broken files.</p></details>
+ <details><summary data-i="q10">Traffic or doors went odd after installing</summary><p data-h="a10">Road nodes and door tuning are checked for structure, not by driving around. Put the originals back, and tell us which pair of resources did it.</p></details>
+ <details><summary data-i="q11">Is anything sent anywhere?</summary><p data-h="a11">No. There is no account, no upload and no telemetry. The only thing that can leave your machine is what you send to the AI provider you picked, when you press an AI button.</p></details>
+ <details><summary data-i="q12">Where do I get help?</summary><p data-h="a12">Questions, bugs and ideas go to the <a href="https://discord.gg/uaASPkghXu" rel="noopener">Unlimited Discord</a>.</p></details>
+</section>
+
+<section class="wrap" id="changelog">
+ <h2 data-i="cl_title">Changelog</h2>
+ <div class="card">
+  <div class="ver"><h3>1.0.0</h3><small data-i="cl_first">first release</small></div>
+  <ul data-h="cl_list"><li>Merging of <code>.ymap</code> (entities with LOD links, car generators, time cycle modifiers, occluders, grass, LOD lights), <code>.ybn</code>, scenario <code>.ymt</code>, <code>.ytyp</code>, duplicate props, <code>doortuning.ymt</code>, <code>water.xml</code> and <code>gta5.meta</code>, <code>.ynd</code> and static <code>.ydr</code>.</li><li>Three-way merge against your own GTA V, found by itself, with 15 game builds from 1604 to 3889.</li><li>Quick check, health check, crash check, scenario page, Server Watcher and history.</li><li>Export to a new folder with install steps; originals and <code>server.cfg</code> are never touched; encrypted files are never opened.</li><li>The merge resource does not wait for the resources it merged, and keeps the scenario files a <code>sp_manifest.ymt</code> names.</li><li>Collision and road node files are written with free page slots, and a file that would crash the game is stopped before export.</li><li>LOD light pairs merged together, with rules for copies emptied by other tools.</li><li>Optional AI helper: read-only by default, edits only its own copy, never encrypted files.</li><li>12 languages, a Windows installer and a tray mode.</li></ul>
+  <div class="box warn" data-h="cl_known">Known limits: road nodes, door tuning and water are checked for structure, not by driving around in game, and merged navmeshes do not exist (you pick one copy). Always test on a test server first and keep your originals.</div>
+ </div>
+</section>
+
+<section class="wrap" id="discord">
+ <div class="card" style="text-align:center;padding:26px 18px">
+  <h2 data-i="dc_title">Questions? Join the Discord</h2>
+  <p class="sub" style="margin:0 auto 16px" data-i="dc_sub">Support, bug reports and ideas for Unlimited MapMerge and the rest of Unlimited.</p>
+  <a class="btn primary" href="https://discord.gg/uaASPkghXu" rel="noopener" data-i="dc_btn">Open the Unlimited Discord</a>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <span data-i="f_lic">© 2026 Unlimited Reforge · free to use, see LICENSE</span>
+  <span data-i="f_rock">Independent: not affiliated with Rockstar Games, Take-Two or Cfx.re. Grand Theft Auto V is the property of Rockstar Games.</span>
+  <a href="https://discord.gg/uaASPkghXu" rel="noopener">Discord</a>
+ </div>
+</footer>
+<script src="i18n.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
