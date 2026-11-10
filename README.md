@@ -3,7 +3,7 @@
 Unlimited MapMerge is a free desktop program for Windows that finds and merges conflicting GTA V map and world files (ymap, ybn, ydr, scenarios and more) from FiveM resources. It runs on your own machine, writes the result to a new folder and never changes your originals or your `server.cfg`. Encrypted (escrow) files are never opened.
 
 - **Website and guide:** https://asarayja.github.io/unlimited-mapmerge-releases/
-- **Download:** [Releases](https://github.com/asarayja/unlimited-mapmerge-releases/releases/latest): `Unlimited-MapMerge-Setup-1.0.0.exe` (Windows, 64-bit)
+- **Download:** [Releases](https://github.com/asarayja/unlimited-mapmerge-releases/releases/latest): `Unlimited-MapMerge-Setup-1.0.1.exe` (Windows, 64-bit)
 - **Support:** the Unlimited Discord, https://discord.gg/uaASPkghXu
 
 This repository holds the releases and the website (`docs/`, served by GitHub Pages). It does not hold the source code. The site is available in 12 languages; its texts are in `i18n-src/` and `tools/check-i18n.js` checks that every language has every key.
